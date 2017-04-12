@@ -41,9 +41,11 @@ Example code for creating a custom NPM Package.
       "babel": {
         "presets": ["latest"]
       }
-      ```  The final finished code in it's entirety should look like:
+      ```  
 
-          ```json
+      The final finished code in it's entirety should look like:
+
+      ```json
           {
             "name": "make-npm-package-example",
             "version": "0.0.0",
@@ -78,7 +80,7 @@ Example code for creating a custom NPM Package.
               "babel-preset-latest": "^6.24.1"
             }
           }
-          ```  
+      ```  
 6. Setup Source files and directory structures.
   - $ `mkdir src`
   - $ `touch index.js` Your directory structure should now look like:
