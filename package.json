@@ -4,11 +4,17 @@
   "description": "This is a custom npm package test.",
   "main": "build/index.js",
   "scripts": {
+    "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
   },
   "babel": {
-    "presets": ["latest"]
+    "presets": [
+      "latest"
+    ]
   },
   "repository": {
     "type": "git",
@@ -29,6 +35,9 @@
   "homepage": "https://github.com/jongrover/make-npm-package-example",
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-preset-latest": "^6.24.1"
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^19.0.2",
+    "np": "^2.13.1",
+    "watch": "^1.0.2"
   }
 }
