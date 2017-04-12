@@ -1,5 +1,5 @@
-import index from '.'
+import {app} from '.'
 
 test('Returns Hello world.', () => (
-  expect(index()).toBe('Hello world.')
+  expect(app()).toBe('Hello world.')
 ))

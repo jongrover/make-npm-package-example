@@ -1,1 +1,1 @@
-export default () => 'Hello world.'
+export const app = () => 'Hello world.'
