@@ -1,6 +1,6 @@
-# Custom Made NPM Package Example
+# Creating, Testing, & Publishing NPM Packages
 
-Example code for creating a custom NPM Package.
+Example code and instrucions for creating, testing, and publishing a custom NPM Package.
 
 ## Instructions
 
