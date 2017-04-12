@@ -156,9 +156,9 @@ Install newest versions of node and npm first. Instructions for [Mac](http://blo
       ```  
   - $ `npm run test:watch` to start tests to run when file changes,
 
-## Usage
+## Local Usage
 
-To link to this node module package in another project within the folder for that project, first type $ `npm link` in the desired node modules folder. Then in the folder for your new project type $ `npm link <your-node-module-package-name>`. This will add a symbolic link to the desired node module inside the _node-modules_ folder for your project. Then in your JavaScript file you wish to import in the module into type
+To link to this node module package locally (without publishing to NPM site) in another project within the folder for that project, first type $ `npm link` in the desired node modules folder. Then in the folder for your new project type $ `npm link <your-node-module-package-name>`. This will add a symbolic link to the desired node module inside the _node-modules_ folder for your project. Then in your JavaScript file you wish to import in the module into type
 
 ```javaScript
 const myModule = require('<your-node-module-package-name>').default
@@ -212,6 +212,8 @@ Then save and close the file and in Terminal install the np dependency $ `npm in
 Make sure that git is happy using $ `git status`. make sure to commit any new changes before adding a new release version to your package.
 
 Then when your ready to update type $ `npm run release` and then select the version change minor or major using the arrow keys and press return. Comfirm by typing $ `y` and hit return.
+
+After publishing you can install your package using the command $ `npm install <your-node-module-package-name> -g` to make it globally installed or without the `-g` option to include in only that project or using the option `--save-dev` to make it a developer dependency for that project.
 
 ## Resources
 
