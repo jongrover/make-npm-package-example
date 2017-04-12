@@ -101,7 +101,8 @@ Example code for creating a custom NPM Package.
     ```  
   - Save all your files.
 8. Run it!
-  - $ `npm run build` The your folder structure should look like:
+  - $ `npm run build`  
+  Then your folder structure should look like:
 
       ```bash
       ├── .git
