@@ -47,9 +47,9 @@ Example code for creating a custom NPM Package.
 
       ```json
           {
-            "name": "make-npm-package-example",
+            "name": "<your project name>",
             "version": "0.0.0",
-            "description": "This is a custom npm package test.",
+            "description": "<your description>",
             "main": "build/index.js",
             "scripts": {
               "build": "babel src -d build",
@@ -60,21 +60,15 @@ Example code for creating a custom NPM Package.
             },
             "repository": {
               "type": "git",
-              "url": "git://github.com/jongrover/make-npm-package-example.git"
+              "url": "git://github.com/<your github username>/<your project name>.git"
             },
-            "keywords": [
-              "test",
-              "npm",
-              "package",
-              "first",
-              "try"
-            ],
-            "author": "Jonathan Grover",
+            "keywords": [],
+            "author": "<your name>",
             "license": "ISC",
             "bugs": {
-              "url": "https://github.com/jongrover/make-npm-package-example/issues"
+              "url": "https://github.com//<your github username>/<your project name>/issues"
             },
-            "homepage": "https://github.com/jongrover/make-npm-package-example",
+            "homepage": "https://github.com/<your github username>/<your project name>",
             "devDependencies": {
               "babel-cli": "^6.24.1",
               "babel-preset-latest": "^6.24.1"
