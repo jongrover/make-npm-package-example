@@ -144,9 +144,9 @@ To first check your existing node version is high enough for this tutorial type 
       ```javascript
       import {app} from '.'
 
-      test('Returns Hello world.', () => (
+      test('Returns Hello world.', () => {
         expect(app()).toBe('Hello world.')
-      ))
+      })
       ```  
   - Open a new terminal window and run `npm test` to see test results.
   - Next setup tests to run automatically when file is saved in _package.json_:
